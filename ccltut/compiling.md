@@ -11,7 +11,7 @@ support future posts---we won't bother to make much use of the flexibility
 compiling with continuations grants.
 
 This post is written as literate Idris ([grab the code
-here](https://github.com/christopherschwaab/blog/ccltut/)) and passes totality
+here](https://github.com/christopherschwaab/blog/tree/master/ccltut/)) and passes totality
 checking.  Syntax highlighted pieces of code are the extractable bits;
 unhighlighted code is merely illustrative and probably won't compile.
 

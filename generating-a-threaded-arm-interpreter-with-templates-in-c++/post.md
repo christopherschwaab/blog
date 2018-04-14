@@ -7,7 +7,7 @@ and the 946E-S info from
 http://infocenter.arm.com/help/topic/com.arm.doc.ddi0201d/DDI0201D_arm946es_r1p1_trm.pdf).
 I also realized wordpress mangled this post so I've also brushed it up in
 markdown and converted the post to literate C++ ([grab the code
-here](https://github.com/christopherschwaab/blog/generating-a-threaded-arm-interpreter-with-templates-in-c++/))
+here](https://github.com/christopherschwaab/blog/tree/master/generating-a-threaded-arm-interpreter-with-templates-in-c++/))
 extractable with sed via.
 
     $ sed -n '/~~~~~{.cpp/,/~~~~~/p' post.md |grep -v '~~~~~' > post.cpp
