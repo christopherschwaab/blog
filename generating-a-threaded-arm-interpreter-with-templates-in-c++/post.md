@@ -253,13 +253,11 @@ we have to make a recursive call rather than the preferable `BOOST_PP_REPEAT(409
   STEP();
 #define OP_ENTRY_R(z, n, __) BOOST_PP_REPEAT(32,  OP_ENTRY,   n)
 #define EMIT_OPS()           BOOST_PP_REPEAT(128, OP_ENTRY_R, 0)
-//#define EMIT_OPS() OP_ENTRY(0, 0, 0)
 
 // This is part for (b)
 #define JMP_ENTRY(z, m, n)    &&op_##n##_##m,
 #define JMP_ENTRY_R(z, n, __) BOOST_PP_REPEAT(32,  JMP_ENTRY,   n)
 #define EMIT_JMPTBL()         BOOST_PP_REPEAT(128, JMP_ENTRY_R, 0)
-//#define EMIT_JMPTBL() JMP_ENTRY(0, 0, 0)
 ~~~~~
 Cool, our implementation is in a testable state, what does main look like?
 
